@@ -1,0 +1,525 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "kernelspec": {
+      "display_name": "HCIA_AI",
+      "language": "python",
+      "name": "hcia_ai"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.6.10"
+    },
+    "colab": {
+      "name": "The first_daily test.ipynb",
+      "provenance": []
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4PZZBVBYk5VP"
+      },
+      "source": [
+        "# 1.Print 'Hello HCIA'."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mvZ_-getk5VW",
+        "outputId": "dac1ae3b-296c-41e9-fa28-731587a29b08",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "print('Hello HCIA')"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hello HCIA\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d2MO-eSFk5Vw"
+      },
+      "source": [
+        "# 2.Define two variables and calculate their sum."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hsLIXSmAk5V7",
+        "outputId": "d415be5f-10c7-48e7-b2ee-99b8fcc4cb41",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a=4\n",
+        "b=8\n",
+        "sum=a+b\n",
+        "print(sum)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "12\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "k7X47-kFk5WM"
+      },
+      "source": [
+        "# 3.Define a list and replicate in three different ways."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ED3WGUzAk5WP",
+        "outputId": "220db151-21b2-4423-fc37-2e87285b6722",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a = [1, 20, 6.7]\n",
+        "a_1 = a.copy()\n",
+        "print(a_1)\n",
+        "\n",
+        "\n",
+        "a_1 = a[ : ] \n",
+        "print(a_1)\n",
+        "\n",
+        "a_1 = []\n",
+        "for i in a: \n",
+        "  a_1.append(i)\n",
+        "print(a_1)"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 20, 6.7]\n",
+            "[1, 20, 6.7]\n",
+            "[1, 20, 6.7]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "lOkR36kXk5Wo"
+      },
+      "source": [
+        "# 4.Define two lists and merge them together."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "F122KOJ6k5Wp",
+        "outputId": "c7bf1363-9be0-44bc-d151-696b68af1298",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a=[1, 2, 3, 4]\n",
+        "b=[5, 6, 7, 8]\n",
+        "c=a+b\n",
+        "print(c)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 2, 3, 4, 5, 6, 7, 8]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Qp4R2pack5XA"
+      },
+      "source": [
+        "# 5. Get the last element of the list and print it."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kcGGCYSUk5XD",
+        "outputId": "6f0a2888-797a-449e-a102-5bbeb3815a80",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "c=[1, 2, 3, 4, 5, 6, 7]\n",
+        "i=len(c)\n",
+        "print(c[i-1])"
+      ],
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "7\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "AYnz__Tdk5Xi"
+      },
+      "source": [
+        "# 6.Define a tuple that contains only one element."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6bATO75Wk5Xl",
+        "outputId": "f75c342a-eb20-4448-f308-196c9b3886f5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a= tuple([1])\n",
+        "print(a)\n",
+        "print(type(a))"
+      ],
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(1,)\n",
+            "<class 'tuple'>\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JFJDbH1Ak5Xy"
+      },
+      "source": [
+        "# 7.Define a three-line long string."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "m4L3mwnf4lGH"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qq9o6__Nk5X4",
+        "outputId": "6b3a9b10-99b9-4586-caa0-02bafb5fad7d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a=\"marety\\npartner\\nlove\"\n",
+        "print(a)"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "marety\n",
+            "partner\n",
+            "love\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Jv6Eo0guk5YH"
+      },
+      "source": [
+        "# 8.Define a tuple and then use the 'for loop' to print all the elements."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "U_PkMoFVk5YK",
+        "outputId": "5fb808da-3cd9-45b7-8a3b-9867e594f0fd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a=([1], [2], [3])\n",
+        "for x in a:\n",
+        " print(x)"
+      ],
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1]\n",
+            "[2]\n",
+            "[3]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "g4i3_iP3k5Ya"
+      },
+      "source": [
+        "# 9.Define a function to do Multiplication, such as Mul(8,6),and its output 48."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_sRlOP82k5Yf",
+        "outputId": "662c4232-233c-436b-bc7c-8b445677aa33",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "def mul(a,b):\n",
+        "  return a*b\n",
+        "mul(8,6)\n"
+      ],
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "48"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9GNsxvL0k5Y0"
+      },
+      "source": [
+        "# 10.Import numpy and use numpy to define an array, the its shape  is (5,5) and all its elements is 0."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CdmQB0dKk5Y2",
+        "outputId": "75669b4c-4394-4097-e562-e05a16512b8d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "import numpy as np\n",
+        "s=(5,5)\n",
+        "np.zeros(s)"
+      ],
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0.]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oTRGjJtWk5ZR"
+      },
+      "source": [
+        "# 11.Import numpy and use numpy to define an array, the shape is (4,6) and all elements is 0."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bgrXCGd5k5ZV",
+        "outputId": "7e1c921a-6439-4c84-8377-43c5560bdbc3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "import numpy as np\n",
+        "s=(4,6)\n",
+        "np.zeros(s)"
+      ],
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[0., 0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0., 0.],\n",
+              "       [0., 0., 0., 0., 0., 0.]])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 42
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "OMfkEgygk5Zx"
+      },
+      "source": [
+        "# 12.Use numpy.arrange() to generate an array of shape(15,), then modify the shape to(3,5)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rB3btQTek5Zz",
+        "outputId": "1e5e8917-4509-44b3-e296-25770b3c05ba",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "a = np.arange(15)\n",
+        "print(a.shape)\n",
+        "print(a.reshape(3,5))"
+      ],
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(15,)\n",
+            "[[ 0  1  2  3  4]\n",
+            " [ 5  6  7  8  9]\n",
+            " [10 11 12 13 14]]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FFDGBG2Zk5aK"
+      },
+      "source": [
+        "# 13.Define two matrices, then calculate and print the result of their point multiplication."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "s0Zm4HPGk5aM",
+        "outputId": "234a70eb-64ff-4acf-ab52-3ae674383d91",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "import numpy as np\n",
+        "a = np.array([ [1, 2, 3], [4, 5, 6] ])\n",
+        "b = np.array([[1,12], [2,5],[3,4]])\n",
+        "total = a.dot(b)\n",
+        "print(total)"
+      ],
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[[14 34]\n",
+            " [32 97]]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
